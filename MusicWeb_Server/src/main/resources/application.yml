@@ -1,0 +1,52 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAQRQ5CYJRWGKQM2VB
+      secret-key: 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
+      use-default-aws-credentials-chain: true
+    region:
+      static: eu-west-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name:
+    
+    
+
+    
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+
+ 
+  jpa.hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  jpa.properties.hibernate.hbm2ddl.auto: none
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 5MB
+      max-file-size: 100MB
+      max-request-size: 500MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/project_music
+    username: root
+    password:
+    jpa:
+     properties:
+      hibernate:
+        enable_lazy_load_no_trans: 'true'
+
+      hibernate.ddl-auto: update
+      generate-ddl: true
+      show-sql: false
+  profiles:
+    active: default
+
+server:
+  port: 5000
+  contextPath: /
+

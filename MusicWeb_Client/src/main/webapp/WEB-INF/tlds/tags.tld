@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+	<tlib-version>1.0</tlib-version>
+	<short-name>mytags</short-name>
+	<uri>http://mytags.vn</uri>
+	<tag>
+		<name>footer</name>
+		<tag-class>com.demo.tags.FooterTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+		<tag>
+		<name>header</name>
+		<tag-class>com.demo.tags.HeaderTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+		<tag>
+		<name>audio_player_section</name>
+		<tag-class>com.demo.tags.AudioPlayerSectionTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>side_menu_start</name>
+		<tag-class>com.demo.tags.SideMenuStartTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<!-- admin site -->
+	<tag>
+		<name>nav_admin</name>
+		<tag-class>com.demo.tags.admin.NavTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>footer_admin</name>
+		<tag-class>com.demo.tags.admin.FooterTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>header_admin</name>
+		<tag-class>com.demo.tags.admin.HeaderTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>
